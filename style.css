@@ -1,0 +1,15 @@
+.bottles_img img{
+
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        cursor: pointer;
+     }
+
+     main{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 2rem;
+            margin-top: 2em;
+            }
+     

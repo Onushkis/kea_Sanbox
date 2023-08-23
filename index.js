@@ -4,3 +4,5 @@ const minKnap = document.querySelector("#knapElement");
     console.log("du er klikket på knappen");
  }
 
+ 
+
