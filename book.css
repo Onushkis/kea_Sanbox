@@ -62,11 +62,29 @@ a.active,a:hover{
 #check{
    display: none; 
 }
-section{
+/* section{
     background: url(./assets/beer_img.jpg) no-repeat;
     background-size: cover;
     height: calc(100vh - 80px);
+} */
+article img{
+width: 20%;
 }
+
+article#person{
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 2em;
+margin-bottom: 2em;
+position: absolute;
+
+}
+
+article p{
+    padding: 1em;
+}
+
 
 @media (max-width: 952px){
     label.logo{
