@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="struktur.css" />
+
+    <title>Html struktur</title>
+</head>
+<header> 
+
+    <h1>Title</h1>
+</header>
+<body>
+    <main class="struktur_main">
+        <section class="flex_section">
+            <div class="1">
+                
+            
+            <h2>Undertitle</h2>
+    <img src="./assets/beer_img.jpg" alt="img of something">
+    <h3>article 1</h3>
+    
+   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+     Assumenda officia pariatur, ut laboriosam voluptates natus, vitae fugit 
+     aut ipsum architecto odit sit autem adipisci. Eius earum culpa explicabo ex assumenda!
+
+   </p>
+</div>
+
+>
+    <div class="2">
+        
+    
+    <h2>Undertitle</h2>
+<img src="./assets/cola_img.jpg" alt="img of something">
+<h3>article 1</h3>
+
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+Assumenda officia pariatur, ut laboriosam voluptates natus, vitae fugit 
+aut ipsum architecto odit sit autem adipisci. Eius earum culpa explicabo ex assumenda!
+
+</p>
+</div>
+        </section>
+        
+    </main>
+    <footer id="fotterchange">This is the footer</footer>
+
+    <!-- <script src="index.js"></script> -->
+    <script>
+         const fotterchange = document.querySelector("#fotterchange");
+    fotterchange.textContent="bla bla bla";
+const header = document.querySelector("header");
+
+    let overskrift = document.createElement("h1");
+    let text =  document.createTextNode("Velcome");
+    overskrift.appendChild(text);
+    header.appendChild(overskrift);
+
+    </script>
+    
+</body>
+</html>
