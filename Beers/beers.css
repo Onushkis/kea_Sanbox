@@ -1,0 +1,27 @@
+ *{
+    box-sizing: border-box;
+
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.grid{
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+     grid-template-columns: repeat(auto-fill, 200px); 
+    /* grid-template-columns: repeat(auto-fill, minmax 1fr); */
+
+    gap:1rem;
+} 
+
+/* img{
+   width: 10%;
+} */
+
+.beer{
+    border: 1px solid gray;
+}
