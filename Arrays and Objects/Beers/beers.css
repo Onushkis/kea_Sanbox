@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.grid{
+    max-width: 1000px;
+    margin: 0;
+}
