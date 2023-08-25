@@ -128,7 +128,7 @@ display: block;
             left: 0;
         }
         section{
-            background: url(./assets/beer_img.jpg) no-repeat;
+            background: url(../assets/beer_img.jpg) no-repeat;
             background-size: cover;
             height: calc(100vh - 80px);
         }

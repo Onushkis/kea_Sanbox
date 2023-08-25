@@ -13,7 +13,7 @@ const person ={
     "fornavn": "Ona",
     "efternavn":"Girdzijauskaite",
     "email":"onushkis@gmail.com",
-    "billede": "./assets/ona.jpg"
+    "billede": "../assets/Ona.jpg"
 }
 
 const destination = document.querySelector("#person");
