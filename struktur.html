@@ -1,123 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="struktur.css" />
 
     <title>Html struktur</title>
-</head>
-<header>
-
+  </head>
+  <header>
     <h1>Title</h1>
-</header>
+  </header>
 
-<body>
+  <body>
     <main class="struktur_main">
-        <section class="flex_section">
-            <div class="1">
+      <section class="flex_section">
 
-
-                <h2>Undertitle</h2>
-                <img src="./assets/beer_img.jpg" alt="img of something">
-                <h3>article 1</h3>
-
-                <ul id="myList">
-                    <li>Coffee</li>
-                    <li>Tea</li>
-                  </ul>
-
-                  <button onclick="myFunction()">Append</button>
-
-                <p class="colorchange" onmouseUp="mouseUp()">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Assumenda officia pariatur, ut laboriosam voluptates natus, vitae fugit
-                    aut ipsum architecto odit sit autem adipisci. Eius earum culpa explicabo ex assumenda!
-
-                </p>
-            </div>
-
-            >
-            <div class="2">
-
-
-                <h2>Undertitle</h2>
-                <img src="./assets/cola_img.jpg" alt="img of something">
-                <h3>article 1</h3>
-
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Assumenda officia pariatur, ut laboriosam voluptates natus, vitae fugit
-                    aut ipsum architecto odit sit autem adipisci. Eius earum culpa explicabo ex assumenda!
-
-                </p>
-            </div>
-        </section>
         
-        <section class="vodkainfo">
-<article id="dirink">
-    <h3></h3>
-    <p></p>
-    <img src="./assets/sprote_img.jpg" alt="sprite info">
+        <div class="1">
+          <h2>Undertitle</h2>
+          <img src="./assets/beer_img.jpg" alt="img of something" />
+          <h3>article 1</h3>
 
-</article>
-        </section>
+          <ul id="myList">
+            <li>Coffee</li>
+            <li>Tea</li>
+          </ul>
 
+          <button onclick="myFunction()">Append</button>
+
+          <p class="colorchange" onmouseUp="mouseUp()">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+            officia pariatur, ut laboriosam voluptates natus, vitae fugit aut
+            ipsum architecto odit sit autem adipisci. Eius earum culpa explicabo
+            ex assumenda!
+          </p>
+        </div>
+
+        >
+        <div class="2">
+          <h2>Undertitle</h2>
+          <img src="./assets/cola_img.jpg" alt="img of something" />
+          <h3>article 1</h3>
+
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+            officia pariatur, ut laboriosam voluptates natus, vitae fugit aut
+            ipsum architecto odit sit autem adipisci. Eius earum culpa explicabo
+            ex assumenda!
+          </p>
+        </div>
+
+      </section>
+
+      <!-- <section class="vodkainfo">
+        <article id="dirink">
+          <h3></h3>
+          <p></p>
+          <img src="./assets/sprote_img.jpg" alt="sprite info" />
+        </article>
+      </section> -->
     </main>
     <footer id="fotterchange">This is the footer</footer>
 
     <!-- <script src="index.js"></script> -->
 
-
     <script>
-        const fotterchange = document.querySelector("#fotterchange");
-        const header = document.querySelector("header");
-        const pic = document.querySelector("img" )
-        const h2change = document.querySelector("h2");
-        const pchange = document.querySelector("p");
-        const h3change = document.querySelector("h3");
+      const fotterchange = document.querySelector("#fotterchange");
+      const header = document.querySelector("header");
+      // const pic = document.querySelector("img" )
+      const h2change = document.querySelector("h2");
+      const pchange = document.querySelector("p");
+      const h3change = document.querySelector("h3");
 
-        const h2changee = document.querySelector("div:nth-child(2) h2");
+      const h2changee = document.querySelector("div:nth-child(2) h2");
 
-        const pchangecolor=document.querySelector("p");
+      const pchangecolor = document.querySelector("p");
 
+      // Create an "li" node:
+      const node = document.createElement("li");
+      // Create a text node:
+      const textnode = document.createTextNode("Water");
+      // Append the text node to the "li" node:
+      node.appendChild(textnode);
+      // Append the "li" node to the list:
+      document.getElementById("myList").appendChild(node);
+      document.getElementsByClassName("pcolorchange");
 
-        // Create an "li" node:
-const node = document.createElement("li");
-// Create a text node:
-const textnode = document.createTextNode("Water");
-// Append the text node to the "li" node:
-node.appendChild(textnode);
-// Append the "li" node to the list:
-document.getElementById("myList").appendChild(node);
-document.getElementsByClassName("pcolorchange");
+      fotterchange.textContent = "bla bla bla";
+      pchange.textContent = "ona mona new text";
+      h2change.textContent = "Vodka img";
+      // pic.src ="assets/vodka_img.jpg";
+      h3change.textContent = "new text";
+      h2changee.textContent = "Cola new img";
 
+      let overskrift = document.createElement("h1");
+      let text = document.createTextNode("Velcome");
+      overskrift.appendChild(text);
+      header.appendChild(overskrift);
 
-        fotterchange.textContent = "bla bla bla";
-        pchange.textContent = "ona mona new text";
-        h2change.textContent = "Vodka img";
-        pic.src ="assets/vodka_img.jpg";
-        h3change.textContent = "new text"
-        h2changee.textContent="Cola new img"
-        
-    
+      let newtext = document.querySelector.createTextNode("new Tittle");
 
-
-
-     
-
-        let overskrift = document.createElement("h1");
-        let text = document.createTextNode("Velcome");
-        overskrift.appendChild(text);
-        header.appendChild(overskrift);
-
-        let newtext= document.querySelector.createTextNode("new Tittle");
-
-        function mouseUp() {
-  document.getElementsByClassName("pcolorchange").style.color = "red";
-}
-        
-        </script>
-
-</body>
-
+      function mouseUp() {
+        document.getElementsByClassName("pcolorchange").style.color = "red";
+      }
+    </script>
+  </body>
 </html>
