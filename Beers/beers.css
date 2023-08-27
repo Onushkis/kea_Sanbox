@@ -18,9 +18,10 @@ img{
     gap:1rem;
 } 
 
-/* img{
-   width: 10%;
-} */
+ img{
+   width: 60%;
+   /* height: 50%; */
+} 
 
 .beer{
     border: 1px solid gray;
