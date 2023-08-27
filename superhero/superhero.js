@@ -1,3 +1,5 @@
+// fetche, loope, clone, ændre, appende
+
 fetch("https://kea-alt-del.dk/t7/superheroes/")
   .then((response) => response.json())
   .then((data) => showSuperheros(data));
@@ -9,7 +11,7 @@ fetch("https://kea-alt-del.dk/t7/superheroes/")
 } */
 
 function showSuperheros(mySuperHeroes) {
-  //Loop
+  //Loop og call a function ental
   mySuperHeroes.forEach(showSuperhero);
 }
 
@@ -17,8 +19,10 @@ function showSuperhero(oneHero) {
     console.log(oneHero);
 //clone, ændre, appende
 const template = document.querySelector("template").content;
+// coppy af template
 const copy = template.cloneNode(true);
 
+// hvem er forældre
 const parent = document.querySelector(".parent");
 console.log(copy);
 copy.querySelector(".alias").textContent = oneHero.alias;
@@ -32,6 +36,18 @@ copy.querySelector(".realName").textContent = oneHero.realName;
 // Origin
 copy.querySelector(".origin").textContent = oneHero.origin;
 
-parent.appendChild(copy);
-}
+ // Image
+copy.querySelector("img").src = oneHero.image; 
 
+/* // Height
+ copy.querySelector(".height").textContent = oneHero.height; */
+
+ // Active
+//  copy.getElementById(".active").innerHTML = Boolean(10 > 9);
+
+// Power
+
+
+parent.appendChild(copy);
+
+}
