@@ -23,6 +23,7 @@ article{
     flex-direction: column;
     justify-content: space-between;
     border-radius: 20px;
+    position: relative;
 }
 
 article div {
@@ -48,4 +49,16 @@ section{
 
 article.twisted .twist{
     display: block;
+}
+
+/* genere en element med css */
+
+article.strong::after{
+    content: "STÆRK";
+    padding: 1em;
+    background-color: red;
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    rotate: 20deg;
 }
