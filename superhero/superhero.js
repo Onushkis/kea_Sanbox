@@ -33,19 +33,20 @@ oneHero.alias;
 // Real name
 copy.querySelector(".realName").textContent = oneHero.realName;
 
+
 // Origin
 copy.querySelector(".origin").textContent = oneHero.origin;
 
  // Image
 copy.querySelector("img").src = oneHero.image; 
 
-/* // Height
+/* // Height a number
  copy.querySelector(".height").textContent = oneHero.height; */
 
- // Active
+ // Active boolien
 //  copy.getElementById(".active").innerHTML = Boolean(10 > 9);
 
-// Power
+// Power Array
 
 
 parent.appendChild(copy);

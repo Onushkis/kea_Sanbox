@@ -1,0 +1,24 @@
+body{
+    max-width: 800px;
+    margin: auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div{
+    width: 50px;
+    aspect-ratio: 1/1;
+    background-color: orange;
+    border-radius: 25px;
+}
+
+section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 2em;
+    margin-top: 3em;
+}
+
+/* added a class blue in js*/
+.blue{
+    background-color: blue;
+}
