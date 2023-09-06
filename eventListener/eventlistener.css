@@ -1,0 +1,27 @@
+body{
+    width: 960px;
+    background-color: bisque;
+    margin: 0 auto;
+}
+
+#myDiv{
+    border: solid black;
+    padding: 2rem;
+    background-color: rgb(51, 161, 125);
+}
+
+#myDiv2{
+    border: solid black;
+    padding: 2rem;
+    background-color: grey;
+}
+
+.mydivs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+    margin-top: 5em;
+
+}
